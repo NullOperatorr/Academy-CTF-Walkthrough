@@ -142,7 +142,7 @@ We found two interesting directories: **phpmyadmin** and **academy**.
 We will now use the credentials we found earlier and try to log in to the **Academy** web application.
 
 
-<img width="1278" height="735" alt="image" src="https://github.com/user-attachments/assets/386ca65f-9e16-498d-8a9a-8fce068bb14d"   
+<img width="1278" height="735" alt="image" src="https://github.com/user-attachments/assets/386ca65f-9e16-498d-8a9a-8fce068bb14d" />  
 <img width="966" height="884" alt="image" src="https://github.com/user-attachments/assets/dfa4515f-2048-47e2-b90d-c563aaa746fd" />
 
 
