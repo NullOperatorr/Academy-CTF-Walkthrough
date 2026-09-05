@@ -120,4 +120,27 @@ Password: student
 
  
  
-  
+  **(B) WebApp & Directory Enumeration:**
+
+We will now visit the Academy web application on port 80. Everything appears to be normal. we will move on to directory enumeration, hoping to find valuable directories or files that could help with exploitation.   
+
+```bash
+http://192.168.38.138
+```
+
+  <img width="1284" height="720" alt="image" src="https://github.com/user-attachments/assets/53d8fe22-71fe-4f03-9959-4f8286527af5" />  
+
+We will move on to directory enumeration, hoping to find valuable directories or files that could help with exploitation. 
+
+```bash
+sudo ffuf -u http://192.168.38.138:80/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```
+
+<img width="1266" height="918" alt="image" src="https://github.com/user-attachments/assets/1c0e656e-2182-4bfe-8d1d-c6c1b2cefc46" /> 
+
+We found two interesting directories: **phpmyadmin** and **academy**.
+We will now use the credentials we found earlier and try to log in to the **Academy** web application.
+
+
+
+
