@@ -67,7 +67,7 @@ We will investigate each service to identify potential vulnerabilities and possi
 The plan is to start by enumerating FTP, as it is one of the easiest services to enumerate when it is not configured correctly and may contain valuable information.  
 Then, we will move to the web application on port 80, followed by SSH on port 22.
 
-- **FTP Anonymous User allowed:**
+- **(A) FTP Anonymous User allowed:**
 
 <img width="708" height="94" alt="image" src="https://github.com/user-attachments/assets/4dd86d42-99a0-4ecb-97a5-a0c3d9e1236e" />
 
@@ -103,6 +103,17 @@ Password: cd73502828457d15655bbd7a63fb0bc8
 hash-identifier cd73502828457d15655bbd7a63fb0bc8
 hashcat -m  0 cd73502828457d15655bbd7a63fb0bc8 /usr/share/wordlists/rockyou.txt
 ```
+
+
+<img width="875" height="435" alt="image" src="https://github.com/user-attachments/assets/c767bab9-e34c-4da6-a516-1adff39757ef" />
+<img width="1089" height="940" alt="image" src="https://github.com/user-attachments/assets/cc37677d-aebc-4811-be1e-6c81d673b24e" />
+
+
+```bash
+Username: 10201321
+Password: student
+```
+
 - We concluded that the hashed password is **MD5** and then cracked it with hashcat.
 - We need an endpoint to authenticate this user which of course will be on the WebApp on port 80.
 - All of the above concluded an FTP information disclosure that must be configured right.
