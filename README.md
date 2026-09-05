@@ -60,6 +60,13 @@ Based on the Nmap scan, we found three open ports:
 
 We will investigate each service to identify potential vulnerabilities and possible ways to gain initial access.
 
+## 2-Enumeration
+
+The plan is to start by enumerating FTP, as it is one of the easiest services to enumerate when it is not configured correctly and may contain valuable information.  
+Then, we will move to the web application on port 80, followed by SSH on port 22.
+
+- FTP Anonymous User allowed:
+
 
  
   
