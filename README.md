@@ -88,9 +88,24 @@ cat note.txt
 <img width="1269" height="530" alt="image" src="https://github.com/user-attachments/assets/3243763a-aacb-4c8d-b169-9cca6c1cf172" />
 <img width="1289" height="442" alt="image" src="https://github.com/user-attachments/assets/3fc83256-cf43-4c1c-ac59-bfa99d010849" />  
 
-Now we have extracted some valuable information:  
+- Now we have extracted some valuable information:  
 1- Grimmie an Administrator uses the same password which is good if we can find.  
 2- Authenticated user ID & Password (Hashed) that we will search where to use them later.  
+
+```bash
+Username: 10201321
+Password: cd73502828457d15655bbd7a63fb0bc8
+```
+
+- Now lets try to crack this password.   
+
+```bash
+hash-identifier cd73502828457d15655bbd7a63fb0bc8
+hashcat -m  0 cd73502828457d15655bbd7a63fb0bc8 /usr/share/wordlists/rockyou.txt
+```
+- We concluded that the hashed password is **MD5** and then cracked it with hashcat.
+- We need an endpoint to authenticate this user which of course will be on the WebApp on port 80.
+- All of the above concluded an FTP information disclosure that must be configured right.
 
  
  
