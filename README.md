@@ -14,7 +14,7 @@ https://drive.google.com/file/d/1u4628J7AwEzFCS3gWZbJgv-lhGzwmrvf/view?source=po
 
 We will walkthrough each of these following steps one by one:
 
-Reconnaissance → Enumeration → Credential Discovery → File Upload (RCE) → Local Enumeration → Credential Reuse → CronJobs Enumeration → Root Access
+Reconnaissance → Enumeration → Credential Discovery → File Upload (RCE)   → Local Enumeration → Credential Reuse → CronJobs Enumeration → Root Access
 
 
 
