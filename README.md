@@ -22,7 +22,7 @@ https://drive.google.com/file/d/1u4628J7AwEzFCS3gWZbJgv-lhGzwmrvf/view?source=po
 
 We will walkthrough each of these following steps one by one:
 
-Reconnaissance → Scanning & Enumeration → Credential Discovery → File Upload (RCE)   → Local Enumeration → Credential Reuse → CronJobs Enumeration → Root Access
+Reconnaissance → Enumeration → Credential Discovery → File Upload (RCE)   → Local Enumeration → Credential Reuse → CronJobs Enumeration → Root Access
 
 
 ---
@@ -41,7 +41,7 @@ ping 192.168.38.138
 
 We can identify Academy IP-Address by netdiscover (Arp Scan) or by Nmap (Ping Sweep), Eventually the IP (192.168.38.138).
 
-**Scanning & Enumeration**
+**Service & Port Scanning**
 
 ```bash
 sudo nmap -Pn -sC -sS -sV -p- -T4 192.168.38.138
