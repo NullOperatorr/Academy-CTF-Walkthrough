@@ -7,7 +7,7 @@ CyberLab-12
 Academy is a vulnerable machine from TCM Security (https://tcm-sec.com/). The objective is to gain root access and capture the flag.  
 It involves a chain of vulnerabilities and misconfigurations across different services, which eventually leads to full system compromise.  
 
-**Machine:**
+**Machine:**  
 https://drive.google.com/file/d/1u4628J7AwEzFCS3gWZbJgv-lhGzwmrvf/view?source=post_page-----e891243c61a8-----------------------------------------
  
 ## #Methodology
