@@ -60,13 +60,38 @@ Based on the Nmap scan, we found three open ports:
 
 We will investigate each service to identify potential vulnerabilities and possible ways to gain initial access.
 
+---
+
 ## 2-Enumeration
 
 The plan is to start by enumerating FTP, as it is one of the easiest services to enumerate when it is not configured correctly and may contain valuable information.  
 Then, we will move to the web application on port 80, followed by SSH on port 22.
 
-- FTP Anonymous User allowed:
+- **FTP Anonymous User allowed:**
 
+<img width="708" height="94" alt="image" src="https://github.com/user-attachments/assets/4dd86d42-99a0-4ecb-97a5-a0c3d9e1236e" />
 
+ An anonymous FTP account allows users to access an FTP server without providing a valid username and password, which can potentially expose sensitive files.  
+
+ **Username: Anonymous**  
+ **Password: Anonymous**  
+
+ ```bash
+ftp 192.168.38.138
+enter Username & Password
+ls
+get note.txt
+exit
+cat note.txt
+```
+
+<img width="1269" height="530" alt="image" src="https://github.com/user-attachments/assets/3243763a-aacb-4c8d-b169-9cca6c1cf172" />
+<img width="1289" height="442" alt="image" src="https://github.com/user-attachments/assets/3fc83256-cf43-4c1c-ac59-bfa99d010849" />  
+
+Now we have extracted some valuable information:  
+1- Grimmie an Administrator uses the same password which is good if we can find.  
+2- Authenticated user ID & Password (Hashed) that we will search where to use them later.  
+
+ 
  
   
