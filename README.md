@@ -289,6 +289,7 @@ CVSS v3.1: 9.8
 
 ## #Visual Summarization
 
+<img width="845" height="1024" alt="image" src="https://github.com/user-attachments/assets/d7ec94e9-cb45-469d-aeef-c5c2d2cc6ab8" />
 
 
 ---
