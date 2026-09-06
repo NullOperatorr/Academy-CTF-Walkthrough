@@ -27,7 +27,7 @@ Reconnaissance → Enumeration → Credential Discovery → File Upload (RCE)   
 
 ---
 
-## 1-Information Gathering:
+## 1-Information Gathering (Active Reconnaissance)
 
 **Host Discovery**
 
@@ -144,6 +144,40 @@ We will now use the credentials we found earlier and try to log in to the **Acad
 
 <img width="1278" height="735" alt="image" src="https://github.com/user-attachments/assets/386ca65f-9e16-498d-8a9a-8fce068bb14d" />  
 <img width="966" height="884" alt="image" src="https://github.com/user-attachments/assets/dfa4515f-2048-47e2-b90d-c563aaa746fd" />
+
+---
+
+## 3-Explotation (Gaining Access):
+
+- Since we found an image upload endpoint, we can test whether the application properly validates uploaded files.  
+- We will attempt to upload a reverse shell payload and set up a listener on our Kali machine.
+- We will use the pentest monkey reverse shell (https://github.com/pentestmonkey/php-reverse-shell/tree/master), download the code and modify the IP & Port.
+
+  <img width="724" height="296" alt="image" src="https://github.com/user-attachments/assets/d0df1670-1fba-47c3-8814-813982d390c6" />   
+
+```bash
+nc -nlvp 4444
+````
+
+<img width="457" height="170" alt="image" src="https://github.com/user-attachments/assets/71bc8b7c-c353-4103-a6c8-adca117c2319" />  
+
+- Upload the Code and see if it works
+
+  <img width="607" height="748" alt="image" src="https://github.com/user-attachments/assets/95b24d03-af08-4581-9dc1-c945774522d5" />
+  <img width="978" height="300" alt="image" src="https://github.com/user-attachments/assets/fcb9f4eb-2a26-445f-921a-095f7ed24e43" />
+
+  - We gained a shell on the machine with (www-data) user so our goal is to escalate our privilege to root (vertical Escalation).
+    
+
+---
+
+## 4-Privilege Escalation (Maintaining Access):
+
+We will perform **local enumeration using LinPEAS**, a shell script that automates the collection of important system information that can help a penetration tester identify possible privilege-escalation opportunities.
+
+
+
+
 
 
 
