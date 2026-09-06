@@ -284,6 +284,23 @@ Severity: Critical
 CVSS v3.1: 9.8  
 **Remediation:** Audit cron jobs regularly & Monitor integrity of privileged scripts.
 
+
 ---
 
+## #Visual Summarization
+
+
+
+---
+
+## #Lessons Learned
+
+* Always enumerate all open services.
+* Check for exposed credentials and sensitive information.
+* Test file upload functionality for vulnerabilities.
+* Always check CronJobs for privilege escalation.
+* Avoid reusing passwords between accounts.
+* Information disclosure can lead to complete compromise.
+* Configuration files frequently expose credentials.
+* Implement least privilege.
 
