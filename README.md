@@ -250,31 +250,40 @@ CVSS v3.1: 7.5
 **Impact:** Unauthorized access to application credentials.  
 **Remediation:** Remove sensitive files from public locations & Disable anonymous FTP.
 
-  
+---
+
 - 2. Weak Password Storage (MD5)  
 Severity: High  
 CVSS v3.1: 7.5  
 **Remediation:** Implement salting & Enforce strong password policies.
+
+---
 
 - 3. Unrestricted File Upload (RCE)
 Severity: Critical  
 CVSS v3.1: 9.8  
 **Remediation:** Validate file signatures & Store uploads outside the web root.
 
+---
+
 - 4. Credential Reuse
 Severity: High  
 CVSS v3.1: 8.8  
 **Remediation:** Separate application and system credentials.
 
+---
 - 5. Plaintext Credentials in Configuration Files  
 Severity: Medium  
 CVSS v3.1: 6.5  
 **Remediation:** Store secrets in environment variables & Restrict file permissions.
+
+---
 
 - 6. Insecure Cron Permissions  
 Severity: Critical  
 CVSS v3.1: 9.8  
 **Remediation:** Audit cron jobs regularly & Monitor integrity of privileged scripts.
 
+---
 
 
