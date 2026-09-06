@@ -207,8 +207,8 @@ chmod +x linpeas.sh
 ```
 
 
-- Now we have a breakthrough. We found a Grimmie user, who is an administrator, along with her password.
-- If you remember the note we found earlier, Grimmie mentioned that she uses the same password for all of her accounts. Therefore, we can try to use these credentials to SSH into the machine.
+- Now we have a breakthrough. We found a Grimmie user, who is an administrator, along with his password.
+- If you remember the note we found earlier, Grimmie mentioned that he uses the same password for all of his accounts. Therefore, we can try to use these credentials to SSH into the machine.
 - We also found a CronJob running under Grimmie’s user, which we will investigate as a possible privilege-escalation opportunity.
 
 
