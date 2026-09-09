@@ -226,6 +226,9 @@ cat backup.sh
 
 - Now we found our way to root access on the machine. The script is executed with high privileges, so we can modify its content to execute a reverse shell and set up a listener on the attacker machine. Once the script runs, we should receive a shell with root privileges. (https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 
+  <img width="745" height="418" alt="image" src="https://github.com/user-attachments/assets/661a3ec3-5204-4197-b6d3-003ce1ac8f15" />
+
+
 ```bash
 nc -nlvp 4444
 ```
