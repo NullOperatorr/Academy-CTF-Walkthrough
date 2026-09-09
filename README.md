@@ -10,7 +10,7 @@ It involves a chain of vulnerabilities and misconfigurations across different se
 **Machine:**  
 https://drive.google.com/file/d/1u4628J7AwEzFCS3gWZbJgv-lhGzwmrvf/view?source=post_page-----e891243c61a8-----------------------------------------
 
-**Enviroment:**  
+**Environment:**  
 
 1- Kali Linux (Attacker).  
 2- Academy (.ovf) VM.  
